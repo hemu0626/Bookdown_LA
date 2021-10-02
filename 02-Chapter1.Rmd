@@ -1,3 +1,7 @@
+---
+runtime: shiny_prerendered
+---
+
 # Chapter 1 Linear Equations in Linear Algebra
 
 ## Systems of Linear Equations
@@ -17,4 +21,15 @@ A system of linear equations is called **{linear system}**.\\
 ```{r}
 knitr::include_app("https://yihui.shinyapps.io/miniUI/",
   height = "600px")
+```
+
+```{r letter-a, echo=FALSE}
+library(learnr)
+
+question("What number is the letter A in the English alphabet?",
+  answer("8"),
+  answer("14"),
+  answer("1", correct = TRUE),
+  answer("23")
+)
 ```
