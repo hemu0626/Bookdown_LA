@@ -1,4 +1,9 @@
 ---
+title: "Programming basics"
+output:
+  learnr::tutorial:
+    progressive: true
+    allow_skip: true
 runtime: shiny_prerendered
 ---
 
@@ -30,6 +35,7 @@ question("What number is the letter A in the English alphabet?",
   answer("8"),
   answer("14"),
   answer("1", correct = TRUE),
-  answer("23")
+  answer("23"),
+allow_retry = TRUE
 )
 ```
