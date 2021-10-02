@@ -2,10 +2,10 @@ fig:nice-fig
 tab:nice-tab
 prerequisites
 intro
-literature
-methods
-math-example
-applications
-example-one
-example-two
-final-words
+chapter-1
+r-markdown
+including-plots
+chapter-1-linear-equations-in-linear-algebra
+systems-of-linear-equations
+linear-system
+linear-system-线性系统-coefficient-系数-and-variable-变量
