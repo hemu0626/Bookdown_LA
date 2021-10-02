@@ -19,3 +19,8 @@ knitr::include_app("https://yihui.shinyapps.io/miniUI/",
   height = "600px")
 ```
 
+
+```{r}
+knitr::include_app("https://hemu0626.shinyapps.io/Q_Ch1/",
+  height = "600px")
+```
