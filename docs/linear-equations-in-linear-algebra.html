@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | MTH017 Linear Algebra for Mathematical Science</title>
+  <title>Chapter 1 Linear Equations in Linear Algebra | MTH017 Linear Algebra for Mathematical Science</title>
   <meta name="description" content="This is a summary note book for MTH017 Linear Algebra for Mathematical Science" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | MTH017 Linear Algebra for Mathematical Science" />
+  <meta property="og:title" content="Chapter 1 Linear Equations in Linear Algebra | MTH017 Linear Algebra for Mathematical Science" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | MTH017 Linear Algebra for Mathematical Science" />
+  <meta name="twitter:title" content="Chapter 1 Linear Equations in Linear Algebra | MTH017 Linear Algebra for Mathematical Science" />
   
   <meta name="twitter:description" content="This is a summary note book for MTH017 Linear Algebra for Mathematical Science" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="index.html"/>
+<link rel="next" href="references.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -110,19 +110,141 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="linear-equations-in-linear-algebra" class="section level1" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Linear Equations in Linear Algebra</h1>
+<div id="systems-of-linear-equations" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Systems of Linear Equations</h2>
+<div id="linear-system-coefficient-and-variable" class="section level3" number="1.1.1">
+<h3><span class="header-section-number">1.1.1</span> Linear System, Coefficient and Variable</h3>
+<p>A linear equation is
+<span class="math display">\[\begin{equation}
+    a_1x_1+a_2x_2+\cdots+a_nx_n=b \qquad n=1, 2, 3, \cdots, \infty
+\end{equation}\]</span>
+<span class="math inline">\(a_1,\dots,a_n\)</span> are real or complex numbers, called <strong>coefficient</strong>.<br />
+<span class="math inline">\(x_1,\dots,x_n\)</span> are unknown <strong>variables</strong>.<br />
+A system of linear equations is called <strong>linear system</strong>.<br />
+</p>
+</div>
+<div id="solution-of-a-linear-system" class="section level3" number="1.1.2">
+<h3><span class="header-section-number">1.1.2</span> Solution of a linear system</h3>
+<p>A system of linear equations has</p>
+<p>The set of all possible solution is called <strong>solution set</strong> .<br />
+Linear systems with the same solution set are called <strong>equivalent</strong>.<br />
+A system of linear equations is said to be <strong>consistent</strong> if it has either one solution or
+infinitely many solutions<br />
+A system is <strong>inconsistent</strong> if it has no solution.</p>
+</div>
+<div id="matrix-notation" class="section level3" number="1.1.3">
+<h3><span class="header-section-number">1.1.3</span> Matrix Notation</h3>
+<p>Suppose we have a linear system:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+&amp;x_1-2x_2+x_3=0\\
+&amp;2x_2-8x_3=8\\
+&amp;5x_1-5x_3=10
+\end{aligned}
+\end{equation}\]</span></p>
+<p>Here, we introduce two forms to represent a linear system using matrix.<br />
+</p>
+<div id="augmented-matrix-form" class="section level4" number="1.1.3.1">
+<h4><span class="header-section-number">1.1.3.1</span> Augmented Matrix Form</h4>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+M= \begin{bmatrix}
+1 &amp; -2 &amp; 1 &amp; 0\\
+0 &amp; 2 &amp; -8 &amp; 8\\
+5 &amp; 0 &amp; -5 &amp; 10
+\end{bmatrix}\\
+%&amp;\xrightarrow[R_1-5R_3]{R_2+2R_3}
+\end{aligned}
+\end{equation}\]</span></p>
+</div>
+<div id="coefficient-matrix-form" class="section level4" number="1.1.3.2">
+<h4><span class="header-section-number">1.1.3.2</span> Coefficient Matrix Form</h4>
+<p>Denote</p>
+<p><span class="math display">\[\begin{equation}
+    \begin{aligned}
+A=    \begin{bmatrix}
+1 &amp; -2 &amp; 1 \\
+0 &amp; 2 &amp; -8 \\
+5 &amp; 0 &amp; -5 
+\end{bmatrix} \qquad X=\begin{bmatrix}
+x_1\\ x_2\\x_3
+\end{bmatrix} \qquad B=\begin{bmatrix}
+0 \\ 8 \\ 10
+\end{bmatrix} \qquad \iff \quad  AX=B \\
+    \end{aligned}
+\end{equation}\]</span></p>
+</div>
+<div id="matrix-elements" class="section level4" number="1.1.3.3">
+<h4><span class="header-section-number">1.1.3.3</span> Matrix Elements</h4>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+&amp;M= \begin{bmatrix}
+1 &amp; -2 &amp; 1 &amp; 0\\
+0 &amp; 2 &amp; -8 &amp; 8\\
+5 &amp; 0 &amp; -5 &amp; 10
+\end{bmatrix}\quad  \Rightarrow \quad M= \begin{bmatrix}
+m_{11} &amp; m_{12} &amp; m_{13} &amp; m_{14}\\
+m_{21} &amp; m_{22} &amp; m_{23} &amp; m_{24}\\
+m_{31} &amp; m_{32} &amp; m_{33} &amp; m_{34}
+\end{bmatrix}\\\\
+&amp; \text{$M$ is a 3 $\times$ 4 matrix (3 rows, 4 columns)} 
+%&amp;\xrightarrow[R_1-5R_3]{R_2+2R_3} 
+\end{aligned}
+\end{equation}\]</span></p>
+<p>The form of <span class="math inline">\(AX=B\)</span> is based on the matrix multiplication, which we are going further in next chapter.<br />
+</p>
+</div>
+</div>
+<div id="elementary-row-operations" class="section level3" number="1.1.4">
+<h3><span class="header-section-number">1.1.4</span> Elementary Row Operations</h3>
+<ul>
+<li>(Replacement, 倍加变换) Replace one row by the sum of itself and a multiple of another row.</li>
+<li>(Interchange, 对换变换) Interchange two rows.</li>
+<li>(Scaling, 倍乘变换) Multiply all entries in a row by a nonzero constant.</li>
+</ul>
+<p>Two matrices are called row <strong>equivalent</strong> if there is a sequence of elementary row operations that transforms one matrix into the other.<br />
+It is important to note that row operations are <strong>reversible</strong>.<br />
+If the augmented matrices of two linear systems are row equivalent, then the two systems have the same solution set.<br />
+</p>
+</div>
+<div id="existence-and-uniqueness-of-solutions" class="section level3" number="1.1.5">
+<h3><span class="header-section-number">1.1.5</span> Existence and Uniqueness of Solutions</h3>
+<p>Two fundamental questions about a linear system are as follows:</p>
+<ul>
+<li>Is the system consistent; that is, does at least one solution exist?</li>
+<li>If a solution exists, is it the only one; that is, is the solution unique?</li>
+</ul>
+</div>
+</div>
+<div id="row-reduction-and-echelon-form" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Row Reduction and Echelon Form</h2>
+<div id="leading-entry-and-pivot-position" class="section level3" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> Leading Entry and Pivot Position</h3>
+<p><span class="math display">\[\begin{equation}
+\begin{bmatrix}
+{1} &amp; -2 &amp; 1 &amp; 0\\
+0 &amp; {2} &amp; -8 &amp; 8\\
+{5} &amp; 0 &amp; -5 &amp; 10\\
+\end{bmatrix}\\
+\end{equation}\]</span></p>
+<p>A  of a row refers to the leftmost nonzero entry (in a nonzero row).\</p>
+<div class="theorem">
+<p><span id="thm:unlabeled-div-1" class="theorem"><strong>Theorem 1.1  </strong></span>This is a <code>theorem</code> environment that can contain <strong>any</strong>
+<em>Markdown</em> syntax.</p>
+</div>
+
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -153,7 +275,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/%s",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-Chapter1.Rmd",
 "text": "Edit"
 },
 "history": {

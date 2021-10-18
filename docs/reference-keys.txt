@@ -13,3 +13,16 @@ brief-introduction-to-the-module
 textbook
 mandatory-textbook
 optional-textbook
+linear-equations-in-linear-algebra
+linear-system-coefficient-and-variable
+thm:unlabeled-div-1
+solution-of-a-linear-system
+linear-system-coefficient-and-variable--
+matrix-notation
+augmented-matrix-form
+coefficient-matrix-form
+matrix-elements
+elementary-row-operations
+existence-and-uniqueness-of-solutions
+row-reduction-and-echelon-form
+leading-entry-and-pivot-position

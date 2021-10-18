@@ -12,8 +12,9 @@ github-repo: rstudio/bookdown-demo
 description: "This is a summary note book for MTH017 Linear Algebra for Mathematical Science"
 ---
 
-# Brief Introduction to the Module
+# Brief Introduction to the Module {-}
 
++ Introduction
 
 Linear Algebra is a fundamental course in Mathematical Sciences. In
 this module, we will introduce fundamental tools and basic theories for treating the
@@ -34,9 +35,9 @@ discuss matrix theory, vector space, and matrix spectral theory and inner produc
 space. Together with the theory, we will introduce some case studies that aim to apply
 the techniques in linear algebra for solving real world problems.
 
-## Textbook
++ Textbook
 
-+ Mandatory textbook: Lay, Lay & McDonald, Linear Algebra and its applications, Pearson.
+  - Mandatory textbook: Lay, Lay & McDonald, Linear Algebra and its applications, Pearson.
 
-+ Optional textbook: Strang, Introduction to Linear Algebra, Tsinghua University Press.
+  - Optional textbook: Strang, Introduction to Linear Algebra, Tsinghua University Press.
 
