@@ -10,17 +10,6 @@ A linear equation is
 \begin{equation}
     a_1x_1+a_2x_2+\cdots+a_nx_n=b \qquad n=1, 2, 3, \cdots, \infty
 \end{equation}
-$a_1,\dots,a_n$ are real or complex numbers, called **{coefficient}**.\\
-$x_1,\dots,x_n$ are unknown **{variables}**\\
-A system of linear equations is called **{linear system}**.\\
-
-```{r}
-knitr::include_app("https://yihui.shinyapps.io/miniUI/",
-  height = "600px")
-```
-
-
-```{r}
-knitr::include_app("https://hemu0626.shinyapps.io/Q_Ch1/",
-  height = "600px")
-```
+$a_1,\dots,a_n$ are real or complex numbers, called **{coefficient}**.
+$x_1,\dots,x_n$ are unknown **{variables}**
+A system of linear equations is called **{linear system}**.

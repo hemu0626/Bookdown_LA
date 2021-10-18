@@ -9,3 +9,7 @@ chapter-1-linear-equations-in-linear-algebra
 systems-of-linear-equations
 linear-system
 linear-system-线性系统-coefficient-系数-and-variable-变量
+brief-introduction-to-the-module
+textbook
+mandatory-textbook
+optional-textbook

@@ -5,25 +5,26 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>MTH017 Linear Algebra for Mathematical Science</title>
-  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="description" content="This is a summary note book for MTH017 Linear Algebra for Mathematical Science" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="MTH017 Linear Algebra for Mathematical Science" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta property="og:description" content="This is a summary note book for MTH017 Linear Algebra for Mathematical Science" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="MTH017 Linear Algebra for Mathematical Science" />
   
-  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="twitter:description" content="This is a summary note book for MTH017 Linear Algebra for Mathematical Science" />
   
 
+<meta name="author" content="Mu He" />
 
 
-<meta name="date" content="2021-10-02" />
+<meta name="date" content="2021-10-18" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -158,12 +159,17 @@ div.csl-indent {
 <li><a href="./">MTH017 Linear Algebra for Mathematical Science</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
-<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
-<li class="chapter" data-level="3" data-path="chapter-1.html"><a href="chapter-1.html"><i class="fa fa-check"></i><b>3</b> Chapter 1</a>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Brief Introduction to the Module</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="chapter-1.html"><a href="chapter-1.html#r-markdown"><i class="fa fa-check"></i><b>3.1</b> R Markdown</a></li>
-<li class="chapter" data-level="3.2" data-path="chapter-1.html"><a href="chapter-1.html#including-plots"><i class="fa fa-check"></i><b>3.2</b> Including Plots</a></li>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#textbook"><i class="fa fa-check"></i><b>1.1</b> Textbook</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="3" data-path="chapter-1-linear-equations-in-linear-algebra.html"><a href="chapter-1-linear-equations-in-linear-algebra.html"><i class="fa fa-check"></i><b>3</b> Chapter 1 Linear Equations in Linear Algebra</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="chapter-1-linear-equations-in-linear-algebra.html"><a href="chapter-1-linear-equations-in-linear-algebra.html#systems-of-linear-equations"><i class="fa fa-check"></i><b>3.1</b> Systems of Linear Equations</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="chapter-1-linear-equations-in-linear-algebra.html"><a href="chapter-1-linear-equations-in-linear-algebra.html#linear-system"><i class="fa fa-check"></i><b>3.1.1</b> Linear System</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
@@ -188,19 +194,34 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="header">
 <h1 class="title">MTH017 Linear Algebra for Mathematical Science</h1>
-<p class="author"><em></em></p>
-<p class="date"><em>2021-10-02</em></p>
+<p class="author"><em>Mu He</em></p>
+<p class="date"><em>2021-10-18</em></p>
 </div>
-<div id="prerequisites" class="section level1" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Prerequisites</h1>
-<p>This is a <em>sample</em> book written in <strong>Markdown</strong>. You can use anything that Pandoc’s Markdown supports, e.g., a math equation <span class="math inline">\(a^2 + b^2 = c^2\)</span>.</p>
-<p>The <strong>bookdown</strong> package can be installed from CRAN or Github:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="index.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;bookdown&quot;</span>)</span>
-<span id="cb1-2"><a href="index.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># or the development version</span></span>
-<span id="cb1-3"><a href="index.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># devtools::install_github(&quot;rstudio/bookdown&quot;)</span></span></code></pre></div>
-<p>Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading <code>#</code>.</p>
-<p>To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <a href="https://yihui.name/tinytex/" class="uri">https://yihui.name/tinytex/</a>.</p>
+<div id="brief-introduction-to-the-module" class="section level1" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Brief Introduction to the Module</h1>
+<p>Linear Algebra is a fundamental course in Mathematical Sciences. In
+this module, we will introduce fundamental tools and basic theories for treating the
+linearity of many variables and crunching collections of numbers (data). Roughly
+speaking, we will study vector geometry not only in the plane or space but also in n dimensional
+space. (Imagine that your ratings of 100 movies put you as a vector in
+100-dimensional space. Would you and five of your friends be actually sitting on a two dimensional
+plane contained in the 100-dimensional space?)</p>
+<p>This module would be useful for future studies in mathematics and other disciplines, for example, statistics,
+finance, engineering, computer science, physics, economics and so on. Linear algebra
+also helps students to understand abstract concepts in group theory and quantum
+mechanics.</p>
+<p>This course starts with solution of systems of linear equations, we will
+discuss matrix theory, vector space, and matrix spectral theory and inner product
+space. Together with the theory, we will introduce some case studies that aim to apply
+the techniques in linear algebra for solving real world problems.</p>
+<div id="textbook" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Textbook</h2>
+<ul>
+<li><p>Mandatory textbook: Lay, Lay &amp; McDonald, Linear Algebra and its applications, Pearson.</p></li>
+<li><p>Optional textbook: Strang, Introduction to Linear Algebra, Tsinghua University Press.</p></li>
+</ul>
 
+</div>
 </div>
             </section>
 
